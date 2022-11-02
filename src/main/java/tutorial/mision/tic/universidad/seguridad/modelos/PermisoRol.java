@@ -1,14 +1,14 @@
-package modelos;
+package tutorial.mision.tic.universidad.seguridad.modelos;
+
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 @Data
-@Document()
-public class usuario {
+public class PermisoRol {
+
     @Id
     private String _id;
-    private String seudonimo;
-    private String correo;
-    private String contrasena;
 
 }
